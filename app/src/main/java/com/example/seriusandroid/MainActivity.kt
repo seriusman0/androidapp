@@ -8,11 +8,13 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var rollButton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val rollButton : Button = findViewById(R.id.roll_button)
+        rollButton = findViewById(R.id.roll_button)
 
         rollButton.setOnClickListener {
             rollDice()
